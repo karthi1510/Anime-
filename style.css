@@ -1,0 +1,1272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{ 
+    font-family: "Mulish", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #0b0c2a;
+
+}
+
+/* navbar in css  */
+.navbar-collapse {
+    flex-grow: 0!important;
+}
+
+nav{
+    position: relative!important;
+    z-index: 999;
+    animation: navbar 1s both ease-out;
+}
+
+/* navbar animation */
+
+@keyframes navbar {
+    from{
+        transform: translateY(-100px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+    
+}
+
+a{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* navbar a lin tag   */
+
+.navinsaid>ul>li>a{    
+    font-size: 15px;
+    color: #b7b7b7!important;
+    font-weight: 700;
+    padding: 0px 20px!important;    
+    height: 100%!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    border-radius: 4px;
+    transition: 0.8s!important;
+    transform: perspective(center);
+    position: relative;
+    overflow: hidden;
+}
+
+.navinsaid>ul li{
+    list-style: none;
+    position: relative;
+    margin-right: 16px;
+}
+
+/* list used */
+
+.navinsaid>ul>li:hover>a{
+    background: #0b0c2a;
+    color: #ffffff!important;
+    transform:translateY(-4px);
+    box-shadow: 5px 5px 7px  #070720 ;
+    padding: 0px 20px!important;
+    
+}
+
+/* navbar a hover */
+
+.navinsaid>ul>li>a::before{
+    content: "";
+    height: 100%;
+    width: 300px;
+    z-index: -1!important;
+    position: absolute;
+    left: -100%;
+    background-image: linear-gradient(-40deg, transparent  20%,#070720 ,transparent  );
+    transition: 1s;
+}
+
+
+.navinsaid>ul>li:hover>a::before{
+    content: "";
+    height: 100%;
+    width: 300px;
+    z-index: -1!important;
+    position: absolute;
+    left: 0%;
+    background-image: linear-gradient(-40deg, transparent,#3a3a5b,transparent  );
+    backdrop-filter: blur(30px);
+}
+
+/* hover navbar  */
+
+.navinsaid, .navinsaid>ul{
+    height: 100%!important;
+}
+
+.navbar {
+    justify-content: space-between!important;
+    height: 70px!important;
+    background: #070720;
+    padding: 0px 70px!important;
+    width: 100%;
+}
+
+/* navbar over box */
+
+nav .iconmenu{   
+    text-align: right;
+    padding: 20px 0 15px!important;
+}
+
+/* login icon  */
+
+nav .iconmenu i{    
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+/* home div */
+
+section{
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+section .container{
+    width: 100%!important;
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    position: relative;
+}
+
+.watch_container{
+    background-image: url(./hero-1.jpg);
+    min-height:530px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1200px 530px;
+    border-radius: 6px;
+    transition: 1s;
+    box-shadow: 0px 0px 10px 4px #070720;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+/*  home box img background  */
+
+.watch_container:hover{
+    background-size: 1260px 560px;
+}
+
+.left_right_button{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left_right_button button{
+    height: 60px;
+    width: 60px;
+    background: #0b0c2a;
+    transform: rotate(45deg);
+    z-index: 1;
+    border: 6px solid #0b0c2a;
+    background-color: #090a1c;
+    position: absolute;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* left said right but  */
+
+.left_right_button button:nth-child(1){
+    left: -32px;
+}
+
+.left_right_button button:nth-child(2){
+    right: -32px;
+}
+
+.left_right_button button i{
+    font-size:clamp(2.4vw, 20px, 4.7vw );
+    color: #b7b7b7;
+
+}
+
+.left_right_button button:nth-child(1) i{
+    transform: rotate(-45deg);
+}
+
+
+.left_right_button button:nth-child(2) i{
+    transform: rotate(-45deg);
+}
+
+/* menubar but */
+
+.dropdown-menu{
+    min-height: 250px!important;
+    width: 100px!important;
+    background: #0b0c2a14;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    border: 1.2px solid #090a1c;
+    box-shadow:  0px 0px 10px  #0b0c2a;
+}
+
+.dropdown-menu  li a{
+    color: #b7b7b7;
+    font-weight: 700;
+}
+.dropdown-menu  li{
+    height: 30px!important;
+    margin: 0px!important;
+    margin-bottom: 10px!important;
+}
+
+.cloned{
+    position:relative;
+    top: 190px;
+    left: 5%;
+    height: 250px!important;
+    margin-bottom: 20px;
+    width: 90%;
+    animation: top 2s both linear infinite  ;
+}
+
+/* adventure div box*/
+
+@keyframes top {
+    0%,100%{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    45%,85%{
+        opacity: 2;
+        transform: translateY(0px);
+    }
+    
+}
+
+
+/* adventure div box animation */
+
+.label{
+    font-size: 13px;
+    color: #e53637;
+    background: #ffffff;
+    padding: 5px 14px 3px;
+    display: inline-block;
+    cursor: pointer;
+    animation: top 2s both linear infinite  ;
+    animation-delay: calc(-10s);
+}
+
+
+
+.cloned h2{
+    color: #ffffff;
+    font-size: clamp(29px, 7vw , 3.7vw);
+    font-weight: 700;
+    line-height: 115%;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    width: 90%;
+    animation: top 2s both linear infinite ;
+    animation-delay: calc(-8s);
+    
+}
+
+.cloned p{
+    color: #ffffff;
+    font-size: clamp(18px, 7vw , 1.4vw);
+    margin-bottom: 20px;
+    width: 100%;
+    animation: top 2s both linear infinite  ;
+    animation-delay: calc(-12s);
+}
+
+
+.cloned a{
+    animation: top 2s both linear infinite  ;
+    animation-delay: calc(-16s);
+}
+
+.cloned a span{
+    font-size: 13px;
+    color: #ffffff;
+    background: #e53637;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    border-radius: 4px 0 0 4px;
+    margin-right: 1px;
+    transition: 0.5s;
+}
+
+
+/* Watch Now but */
+
+.cloned a i{
+    font-size: 19px;
+    display: inline-block;
+    background: #e53637;
+    padding: 12px 5px 16px 8px;
+    color: #ffffff;
+    border-radius: 0 4px 4px 0;
+    transition: 0.5s;
+}
+
+
+/* Watch Now but i */
+
+.cloned a:hover i,.cloned a:hover span{
+    background-color: #e94e4e;
+}
+
+aside{
+    padding: 80px 0px 60px 0px !important;
+}
+
+.trending{
+    margin-bottom: 50px;
+}
+
+.wrapbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productitem, .leftsaidanime, .sidebar{
+    animation: to1  both linear;
+    animation-timeline: view();
+    animation-range-start: 4%;
+    animation-range-end: 26%;
+
+}
+
+@keyframes to1 {
+    from{
+        opacity: 0;
+        transform: translateY(320px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
+
+
+.sectiontitle {
+    margin-bottom: 30px;
+}
+
+.sectiontitle h4 {
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    cursor: pointer;
+
+}
+
+/* Trending now head*/
+
+.sectiontitle h4::after ,.sidebar_view .title h5::after,.section-title h5::after{
+    position: absolute;
+    left: 0;
+    top: -6px;
+    height: 32px;
+    width: 4px;
+    background: #e53637;
+    content: "";
+}
+
+/* Trending now head after*/
+
+.btn_all{
+    margin-bottom:30px;
+}
+
+
+/* view head*/
+
+.btn_all a{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 2px;
+
+}
+
+.btn_all a i {
+    font-size: 18px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+
+/* view head i */
+
+.picbox {
+    height: 325px;
+    position: relative;
+    border-radius: 5px;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    box-shadow: 0px 0px 6px 4px #070720;
+}
+
+/* anime img  div box */
+
+.productitem{
+    margin-bottom: 30px;
+}
+
+.picbox .ep, .leftsaidanime .ep{ 
+    font-size: 13px;
+    color: #ffffff;
+    background: #e53637;
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 4px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+/* anime img   list */
+
+.picbox .ep:hover{
+    background: #ad4343;
+}
+
+.picbox .comment{
+    font-size: 13px;
+    color: #ffffff;
+    background: #3d3d3d;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+/* anime img  comment */
+
+.picbox .view{
+    font-size: 13px;
+    color: #ffffff;
+    background: #3d3d3d;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+/* anime img  view i box */
+
+.productitem_text{
+    padding-top: 30px;
+}
+
+.productitem_text ul{
+    padding: 0px;
+}
+
+.productitem_text ul li {
+    list-style: none;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 1px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* anime content  list active and movie */
+
+.productitem_text a{  
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 27px;
+    cursor: pointer; 
+}
+
+
+.sidebar_view{
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.sidebar_view .title{
+    margin-bottom: 30px;
+}
+
+.sidebar_view .title h5{
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-left: 14px;
+    position: relative;
+}
+
+/* anime name list */
+
+.filter_controls{
+    position: absolute;
+    right: -5px;
+    top: -0.3%;
+}
+
+.filter_controls li{
+    list-style: none;
+    font-size: 13px;
+    color: #b7b7b7;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.leftsaidanime{
+    height: 190px;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 20px;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    box-shadow: 0px 0px 6px 4px #070720;
+}
+
+.leftsaidanime h5{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    padding: 0 30px 0 20px;
+}
+
+.leftsaidanime a{
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.leftsaidanime .view{
+    font-size: 13px;
+    color: #ffffff;
+    background: #3d3d3d;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.product_sidebar1{
+    margin-bottom: 35px;
+}
+
+.section-title{
+    margin-bottom: 30px;
+}
+
+.section-title h5{
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sidebar{
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.comment{
+    margin-right: 15px;
+}
+
+.comment img{
+    min-width: 100%;    
+    box-shadow: 0px 0px 6px 4px #070720;
+    border-radius: 3px;
+}
+
+.item_text{
+    margin-bottom: 10px;
+}
+
+.item_text ul{
+    padding: 0px;
+}
+
+.item_text li{   
+    list-style: none;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 1px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.item_text h5{
+    margin-bottom: 10px;
+}
+
+.item_text h5 a{
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.item_text span{
+    display: block;
+    font-size: 13px;
+    color: #b7b7b7;
+}
+
+.topview{
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    margin-left: -25px;
+}
+
+footer{
+    background: #070720;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.topview i{
+    font-size: 30px;
+    color: #ffffff;
+    height: 57px;
+    width: 57px;
+    background: #e53637;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.footernav{
+    text-align: center;
+}
+
+.footernav ul {
+    padding: 0px;
+}
+.footernav ul li{
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.footernav ul li a{
+    font-size: 15px;
+    color: #b7b7b7;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer p{
+    color: #b7b7b7;
+
+}
+
+footer p i{
+    color: #b7b7b779;
+}
+
+.menubar{
+    margin-top: 35px;
+}
+
+.menu1 a{
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.bor1{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.menu1>i{
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.menu1 a i{
+        margin-right: 5px;
+    color: #e53637;
+}
+
+.order1{
+    position: relative;
+    display: flex!important;
+}
+
+.order1 p{
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 16px;
+    white-space: nowrap;
+}
+
+.order1 select option,.order1 select{
+    display: inline-block;
+    font-size: 15px;
+    color: #3d3d3d;
+    font-weight: 700;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-right: 40px;
+    height: 32px;
+    outline: none;
+}
+
+.order1  i{
+    position: absolute;
+    height: 30px;
+    color: #3d3d3d;
+    right: 20%;
+    z-index: 1;
+    background-color: #ffffff;
+    
+
+}
+
+.pagenumber{
+    margin-top: 15px;
+}
+
+.pagenumber a:nth-child(1){
+    border: 1px solid #ffffff;
+}
+
+.pagenumber a{
+    display: inline-block;
+    font-size: 15px;
+    color: #b7b7b7;
+    font-weight: 600;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 48px;
+    text-align: center;
+}
+
+.menu1 span{
+    font-size: 15px;
+    color: #b7b7b7;
+    display: inline-block;
+}
+
+.Anime_Details,.animecontent{
+    margin-bottom: 60px;
+    
+}
+
+.animetextbox{
+    position: relative;
+}
+
+.picbox1{
+    height: 440px;
+}
+
+.animetitle{
+    margin-bottom: 20px;
+}
+
+.animetitle h3{
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+.animetitle p{
+    font-size: 15px;
+    color: #b7b7b7;
+}
+
+.animerating {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.animerating i{
+    font-size: 24px;
+    color: #e89f12;
+    display: inline-block;
+}
+
+.animerating p{
+    font-size: 18px;
+    color: #b7b7b7;
+}
+
+.animetextbox>p{
+    color: #b7b7b7;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.animewidget{   
+    margin-bottom: 15px;
+}
+
+.animewidget ul li{
+    list-style: none;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 30px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.animewidget ul li::after{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    height: 6px;
+    width: 6px;
+    background: #b7b7b7;
+    content: "";
+
+}
+
+.animewidget ul li span{
+    color: #b7b7b7;
+    width: 115px;
+    display: inline-block;
+}
+
+.followbtn{
+    font-size: 13px;
+    color: #ffffff;
+    background: #e53637;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    border-radius: 4px;
+    margin-right: 11px;
+}
+
+.watchbtn span{
+    font-size: 13px;
+    color: #ffffff;
+    background: #e53637;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    border-radius: 4px 0px 0px 4px;
+    margin-right: 1px;
+}
+
+.watchbtn i{
+    font-size: 20px;
+    display: inline-block;
+    background: #e53637;
+    padding: 11px 5px 16px 8px;
+    color: #ffffff;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.reviewbox{
+    margin-bottom: 55px;
+}
+
+.itembox{
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.picmessimg{
+    margin-right: 20px;
+    position: relative;
+}
+
+.picmessimg img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.review_box{
+    background: #1d1e39;
+    padding: 18px 30px 16px 20px;
+    border-radius: 10px;
+
+}
+
+.review_box h6{
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.review_box h6 span{ 
+    color: #b7b7b7;
+    font-weight: 400;
+}
+
+.review_box p{
+    color: #b7b7b7;
+    line-height: 23px;
+    margin: 0px;
+}
+
+form textarea{
+    width: 100%;
+    font-size: 15px;
+    color: #b7b7b7;
+    padding-left: 20px;
+    padding-top: 12px;
+    height: 110px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 24px;
+}
+
+form button{
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #e53637;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+.animevideo{
+    margin-bottom: 60px;
+}
+
+.anime-details{
+    margin-top: 50px;
+}
+
+.animevideo video{
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 4px #070720;
+    filter: opacity(70%);
+}
+
+.episodesdiv{
+    margin-bottom: 35px;
+}
+
+.episodesdiv a{
+    display: inline-block;
+    font-size: 15px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    transition: all, 0.3s;
+}
+
+.episodesdiv a:hover{
+    color: #000000;
+    background: #ffffff;
+}
+
+.sap{
+    margin-bottom: 60px;
+}
+
+.normalhead {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./normal-breadcrumb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.normalhead h3{   
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.normalhead p{
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.imgbox{
+    margin:50px 0px 60px 0px  ;
+
+}
+
+
+.img1{
+    height: 580px;
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 4px #070720; 
+
+}
+
+.img2{
+ 
+    height: 285px;
+}
+
+.text1{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    text-align: center;
+    width: 100%;
+    padding: 0px 105px;
+}
+
+.text2{
+    padding: 0 30px;
+}
+
+.text1 p{
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+
+.text2 p{
+    margin-bottom: 5px;
+}
+
+.text1 p i{
+    color: #e53637;
+    margin-right: 5px;
+}
+
+
+.text1 h4 a{
+    color: #ffffff;
+    line-height: 34px;
+}
+
+
+
+
+
+
+/* ===== Responsive Design Start ===== */
+
+/* Default Design (Desktop First) */
+
+@media only screen and (max-width:991px) {
+
+nav .iconmenu {
+    position: absolute;
+    text-align: right;
+    padding: 20px 0 15px !important;
+    right: 140px;
+
+}
+
+.navbar-toggler {
+    border: none;
+    order: 1;
+}
+
+.navinsaid
+ {
+    min-height: 180px !important;
+    order: 2;
+    position:absolute;
+    top: 100%;
+    left: 10%   ;
+    background-color: #3a3a5b22;
+    backdrop-filter: blur(8px);
+    border: 1.3px solid #070720;
+    width: 80%!important;
+    padding: 10px;
+    
+
+}
+
+.navinsaid>ul>li>a::before{
+    display: none;
+}
+
+.navinsaid>ul>li:hover>a{
+    background:none;
+    transform:none;
+    padding: 0px 20px!important;
+    box-shadow: none;
+    
+}
+
+.navinsaid>ul>li>a{      
+    height: 40px!important;
+}
+
+.navbar-nav .dropdown-menu {
+    position: none!important;
+}
+
+.dropdown-menu {
+    width:clamp( 120px - 30px) !important;
+    background: #0b0c2ad7!important;
+    position: absolute!important;
+    left: 65%!important;
+    top: -50px!important;
+
+}
+
+.footerlogo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.picbox1{
+    margin-bottom: 40px;
+}
+
+.product_sidebar{
+    margin-top: 50px;
+}
+
+}
+
+
+
+@media only screen and (max-width:799px) {
+
+
+
+.animerating{
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.text1{
+    padding: 0px 30px;
+}
+
+.headter{
+    padding: 0px!important;
+    width: 100%;
+}
+
+
+}
+
+
+           /* ====== Responsive Mobail===== */
+ 
+
+@media only screen  and (max-width: 650px) {
+   
+.navbar {
+    padding: 0px 30px !important;
+
+}
+
+nav .iconmenu {
+    position: absolute;
+    text-align: right;
+    padding: 20px 0 15px !important;
+    right: 110px;
+}
+
+}
+   
