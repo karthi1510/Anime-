@@ -1141,10 +1141,243 @@ form button{
     line-height: 34px;
 }
 
+.blog_box{
+    padding-top: 70px;
+}
 
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
+.blog_title{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.blog_title h6 {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.blog_title h2 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 38px;
+}
+
+.blog_title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.blog_title .blog_social a {
+    display: inline-block;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 16px 35px 14px 20px;
+    border-radius: 2px;
+    margin-right: 6px;
+}
+
+.blog_title .blog_social a.facebook {
+    background: #3b5998;
+}
+
+.blog_title .blog_social a.pinterest {
+    background: #ca2027;
+}
+
+.blog_title .blog_social a.linkedin {
+    background: #0372b1;
+}
+
+.blog_title .blog_social a.twitter {
+    background: #39a1f2;
+}
+
+.blog_pic {
+    margin-bottom: 30px;
+}
+
+.blog._pic img {
+    min-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.blog_text{
+    margin-bottom: 40px;
+}
+
+.blog_text p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.blog_item_text {
+    margin-bottom: 42px;
+}
+
+.blog_item_text h4 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.blog_item_text img {
+    min-width: 100%;
+    margin-bottom: 26px;
+}
+
+.blog_item_text p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.blog_tags {
+    margin-bottom: 60px;
+}
+
+.blog_tags a {
+    display: inline-block;
+    color: #b7b7b7;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-right: 6px;
+    padding: 6px 15px;
+    margin-bottom: 10px;
+}
+
+.blog_btns {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 0 15px;
+    margin-bottom: 65px;
+}
+
+.blog_btns_item {
+    margin-bottom: 20px;
+}
+ 
+h5{
+    font-size: 18px;
+}
+
+.blog_btns_item h5 a {
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.blog_comment {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 30px;
+}
+
+.blog_comment h4 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.blog_comment_item {
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.blog_comment_item_pic {
+    float: left;
+    margin-right: 40px;
+}
+
+.blog_comment_text span {
+    font-size: 14px;
+    color: #b7b7b7;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog_comment_text h5 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.blog_comment_text p {
+    color: #b7b7b7;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.blog_comment_text a {
+    display: inline-block;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 20px;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    margin-right: 14px;
+    -webkit-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+}
+
+.blog_comment_item_reply {
+    padding-left: 112px;
+}
+
+.blog_form {
+    padding-top: 50px;
+}
+
+.blog_form h4 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.blog_form form input {
+    height: 50px;
+    width: 100%;
+    background: #ffffff;
+    font-size: 15px;
+    color: #a6a6a6;
+    padding-left: 20px;
+    border-radius: 2px;
+    border: none;
+    margin-bottom: 30px;
+}
 
 /* ===== Responsive Design Start ===== */
 
@@ -1223,6 +1456,12 @@ nav .iconmenu {
     margin-top: 50px;
 }
 
+.col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
 }
 
 
@@ -1247,6 +1486,26 @@ nav .iconmenu {
     width: 100%;
 }
 
+.blog_social {
+        overflow: hidden;
+    }
+
+.container{
+    max-width: 720px;
+}
+
+.blog_title h2 {
+    font-size: 34px;
+    line-height: normal;    
+}
+
+.blog_title .blog_social a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: calc(50% - 10px);
+    float: left;
+}
+
 
 }
 
@@ -1267,6 +1526,11 @@ nav .iconmenu {
     padding: 20px 0 15px !important;
     right: 110px;
 }
+
+.blog_title .blog_social a {
+    padding: 16px 25px 14px 20px;
+}
+
 
 }
    
